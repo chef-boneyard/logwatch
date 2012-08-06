@@ -21,3 +21,14 @@ include_recipe "perl"
 
 package "logwatch"
 
+# configure logwatch email daily report
+template "/etc/logwatch/conf/logwatch.conf" do
+  source "logwatch.conf.erb"
+  owner  "root"
+  group  "root"
+  mode   "0644"
+  variables(
+    :logwatch_email => node[:logwatch][:email]
+  )  
+end
+
