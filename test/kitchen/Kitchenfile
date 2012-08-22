@@ -1,0 +1,3 @@
+cookbook "logwatch" do
+  runtimes []
+end
