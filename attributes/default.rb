@@ -1,1 +1,1 @@
-default[:logwatch][:email] = "root@localhost"
+default['logwatch']['email'] = "root@localhost"

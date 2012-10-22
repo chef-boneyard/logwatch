@@ -1,14 +1,12 @@
 #
-# Cookbook Name:: logwatch
-# Recipe:: default
-#
-# Copyright 2009, Opscode, Inc.
+# Author:: Joshua Timberman <joshua@opscode.com>
+# Copyright:: Copyright (c) 2012, Opscode, Inc. <legal@opscode.com>
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
 # You may obtain a copy of the License at
 #
-#     http://www.apache.org/licenses/LICENSE-2.0
+#    http://www.apache.org/licenses/LICENSE-2.0
 #
 # Unless required by applicable law or agreed to in writing, software
 # distributed under the License is distributed on an "AS IS" BASIS,
@@ -17,17 +15,10 @@
 # limitations under the License.
 #
 
-include_recipe "perl"
-
-package "logwatch"
-
-# configure logwatch email daily report
-template "/etc/logwatch/conf/logwatch.conf" do
-  source "logwatch.conf.erb"
-  owner  "root"
-  group  "root"
-  mode   "0644"
-  variables(
-    :logwatch_email => node['logwatch']['email']
-  )
+module Helpers
+  module Logwatch
+    include MiniTest::Chef::Assertions
+    include MiniTest::Chef::Context
+    include MiniTest::Chef::Resources
+  end
 end
