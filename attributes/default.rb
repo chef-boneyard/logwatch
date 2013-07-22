@@ -1,5 +1,5 @@
 default['logwatch']['email'] = "root@localhost"
-default['logwatch']['detail'] = 5
+default['logwatch']['detail'] = "Low"
 default['logwatch']['range'] = "yesterday"
-default['logwatch']['output'] = "mail"
-default['logwatch']['format'] = "html"
+default['logwatch']['output'] = "stdout"
+default['logwatch']['format'] = "text"
