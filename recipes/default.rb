@@ -27,11 +27,4 @@ template "/etc/logwatch/conf/logwatch.conf" do
   owner  "root"
   group  "root"
   mode   "0644"
-  variables(
-    :logwatch_email => node['logwatch']['email'],
-    :logwatch_detail => node['logwatch']['detail'],
-    :logwatch_range => node['logwatch']['range'],
-    :logwatch_output => node['logwatch']['output'],
-    :logwatch_format => node['logwatch']['format']
-  )
 end
