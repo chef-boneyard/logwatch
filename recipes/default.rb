@@ -27,7 +27,4 @@ template "/etc/logwatch/conf/logwatch.conf" do
   owner  "root"
   group  "root"
   mode   "0644"
-  variables(
-    :logwatch_email => node['logwatch']['email']
-  )
 end

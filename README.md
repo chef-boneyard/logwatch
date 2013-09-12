@@ -21,6 +21,15 @@ Usage
 Ensures that perl is installed to be used with logwatch and then
 installs logwatch.
 
+Attributes
+==========
+
+* `node['logwatch']['email']` - Email Address which Logwatch reports to
+* `node['logwatch']['detail']` - The level of detail in the Logwatch report
+* `node['logwatch']['range']` - The default time range for the Logwatch report
+* `node['logwatch']['output']` - The output method of the Logwatch report
+* `node['logwatch']['format']` - The format of the Logwatch report
+
 License and Author
 ==================
 
