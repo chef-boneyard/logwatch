@@ -1,4 +1,4 @@
-require 'chefspec'
+require 'spec_helper'
 
 describe 'logwatch::default' do
   let(:chef_run) { ChefSpec::ChefRunner.new.converge('logwatch::default') }
