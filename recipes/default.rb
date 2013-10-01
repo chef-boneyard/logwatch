@@ -2,7 +2,7 @@
 # Cookbook Name:: logwatch
 # Recipe:: default
 #
-# Copyright 2009, Opscode, Inc.
+# Copyright 2009-2013, Opscode, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,14 +17,14 @@
 # limitations under the License.
 #
 
-include_recipe "perl"
+include_recipe 'perl::default'
 
-package "logwatch"
+package 'logwatch'
 
-# configure logwatch email daily report
-template "/etc/logwatch/conf/logwatch.conf" do
-  source "logwatch.conf.erb"
-  owner  "root"
-  group  "root"
-  mode   "0644"
+# Configure logwatch email daily report
+template '/etc/logwatch/conf/logwatch.conf' do
+  source 'logwatch.conf.erb'
+  owner  'root'
+  group  'root'
+  mode   '0644'
 end
