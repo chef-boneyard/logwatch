@@ -2,6 +2,7 @@
 # Do NOT modify this file by hand!
 
 MailTo = <%= node['logwatch']['email'] %>
+MailFrom = <%= node['logwatch']['sender'] %>
 Detail = <%=  node['logwatch']['detail'] %>
 Range = <%= node['logwatch']['range'] %>
 Output = <%=  node['logwatch']['output'] %>
