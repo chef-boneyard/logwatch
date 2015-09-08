@@ -1,6 +1,7 @@
 logwatch Cookbook
 =================
-[![Build Status](https://travis-ci.org/chef-cookbooks/logwatch.png?branch=master)](https://travis-ci.org/chef-cookbooks/logwatch)
+[![Build Status](https://travis-ci.org/chef-cookbooks/logwatch.svg?branch=master)](http://travis-ci.org/chef-cookbooks/logwatch)
+[![Cookbook Version](https://img.shields.io/cookbook/v/logwatch.svg)](https://supermarket.chef.io/cookbooks/logwatch)
 
 Installs logwatch
 
@@ -34,7 +35,7 @@ License & Authors
 - Author:: Joshua Timberman <joshua@chef.io>
 
 ```text
-Copyright:: 2009-2013, Chef Software, Inc
+Copyright:: 2009-2015, Chef Software, Inc
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
