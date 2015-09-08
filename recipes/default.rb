@@ -24,7 +24,7 @@ package 'logwatch'
 # Configure logwatch email daily report
 template '/etc/logwatch/conf/logwatch.conf' do
   source 'logwatch.conf.erb'
-  owner  'root'
-  group  'root'
-  mode   '0644'
+  owner 'root'
+  group 'root'
+  mode '0644'
 end
