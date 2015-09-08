@@ -14,3 +14,7 @@ supports 'redhat'
 supports 'ubuntu'
 
 recipe 'logwatch', 'Installs logwatch'
+
+source_url 'https://github.com/chef-cookbooks/logwatch' if respond_to?(:source_url)
+issues_url 'https://github.com/chef-cookbooks/logwatch/issues' if respond_to?(:issues_url)
+
