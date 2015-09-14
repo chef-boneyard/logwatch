@@ -17,8 +17,8 @@
 # limitations under the License.
 #
 
-default['logwatch']['email']  = 'root@localhost'
-default['logwatch']['sender']  = 'Logwatch'
+default['logwatch']['email'] = 'root@localhost'
+default['logwatch']['sender'] = 'Logwatch'
 default['logwatch']['detail'] = 'Low'
 default['logwatch']['range']  = 'yesterday'
 default['logwatch']['output'] = 'stdout'
