@@ -8,10 +8,9 @@ version '1.1.1'
 
 depends 'perl', '~> 1.2'
 
-supports 'centos'
-supports 'debian'
-supports 'redhat'
-supports 'ubuntu'
+%w(ubuntu debian redhat centos scientific oracle amazon).each do |os|
+  supports os
+end
 
 recipe 'logwatch', 'Installs logwatch'
 
