@@ -5,5 +5,7 @@ MailTo = <%= node['logwatch']['email'] %>
 MailFrom = <%= node['logwatch']['sender'] %>
 Detail = <%=  node['logwatch']['detail'] %>
 Range = <%= node['logwatch']['range'] %>
-Output = <%=  node['logwatch']['output'] %>
 Format = <%=  node['logwatch']['format'] %>
+<% @directives.each do |directive| %>
+<%= directive %>
+<% end %>

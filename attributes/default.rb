@@ -21,5 +21,5 @@ default['logwatch']['email'] = 'root@localhost'
 default['logwatch']['sender'] = 'Logwatch'
 default['logwatch']['detail'] = 'Low'
 default['logwatch']['range']  = 'yesterday'
-default['logwatch']['output'] = 'stdout'
 default['logwatch']['format'] = 'text'
+default['logwatch']['directives'] = []
