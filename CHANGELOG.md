@@ -2,6 +2,10 @@ logwatch Cookbook CHANGELOG
 =======================
 This file is used to list changes made in each version of the logwatch cookbook.
 
+v1.2.1 (11-16-2016)
+-------------------
+* Added node['logwatch']['directives'] attribute for passing an array of directives to the logwatch config
+
 v1.2.0
 ------
 * Add new `node['logwatch']['sender']` attribute
