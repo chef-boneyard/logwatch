@@ -32,6 +32,7 @@ template '/etc/logwatch/conf/logwatch.conf' do
   )
 end
 
+# Add an ignore.conf file
 template '/etc/logwatch/conf/ignore.conf' do
   source 'ignore.conf.erb'
   owner 'root'
