@@ -39,6 +39,6 @@ template '/etc/logwatch/conf/ignore.conf' do
   group 'root'
   mode '0644'
   variables(
-    directives: node['logwatch']['ignores']
+    ignores: node['logwatch']['ignores']
   )
 end
