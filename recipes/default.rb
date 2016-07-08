@@ -31,3 +31,13 @@ template '/etc/logwatch/conf/logwatch.conf' do
     directives: node['logwatch']['directives']
   )
 end
+
+template '/etc/logwatch/conf/ignore.conf' do
+  source 'ignore.conf.erb'
+  owner 'root'
+  group 'root'
+  mode '0644'
+  variables(
+    directives: node['logwatch']['ignores']
+  )
+end
