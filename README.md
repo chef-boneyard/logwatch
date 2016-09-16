@@ -1,44 +1,42 @@
-logwatch Cookbook
-=================
-[![Build Status](https://travis-ci.org/chef-cookbooks/logwatch.svg?branch=master)](http://travis-ci.org/chef-cookbooks/logwatch)
-[![Cookbook Version](https://img.shields.io/cookbook/v/logwatch.svg)](https://supermarket.chef.io/cookbooks/logwatch)
+# logwatch Cookbook
+
+[![Build Status](https://travis-ci.org/chef-cookbooks/logwatch.svg?branch=master)](http://travis-ci.org/chef-cookbooks/logwatch) [![Cookbook Version](https://img.shields.io/cookbook/v/logwatch.svg)](https://supermarket.chef.io/cookbooks/logwatch)
 
 Installs logwatch
 
+## Requirements
 
-Requirements
-------------
-#### Platforms
+### Platforms
+
 - Debian/Ubuntu
 - RHEL/CentOS/Scientific/Amazon/Oracle
 
-#### Chef
+### Chef
+
 - Chef 12.1+
 
-#### Cookbooks
+### Cookbooks
+
 - perl
 
+## Usage
 
-Usage
------
 Ensures that perl is installed to be used with logwatch and then installs logwatch.
 
+## Attributes
 
-Attributes
-----------
 - `node['logwatch']['email']` - Email Address which Logwatch reports to
 - `node['logwatch']['detail']` - The level of detail in the Logwatch report
 - `node['logwatch']['range']` - The default time range for the Logwatch report
 - `node['logwatch']['format']` - The format of the Logwatch report
 - `node['logwatch']['directives']` - Additional configuration options can be added here, comma separated, for example: `default['logwatch']['directives'] = ['Print = Yes', 'Output = mail', 'Service = All']`
 
+## License & Authors
 
-License & Authors
------------------
-
-**Author:** Cookbook Engineering Team (<cookbooks@chef.io>)
+**Author:** Cookbook Engineering Team ([cookbooks@chef.io](mailto:cookbooks@chef.io))
 
 **Copyright:** 2009-2016, Chef Software, Inc.
+
 ```
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
