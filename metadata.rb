@@ -14,5 +14,6 @@ end
 
 recipe 'logwatch', 'Installs logwatch'
 
-source_url 'https://github.com/chef-cookbooks/logwatch' if respond_to?(:source_url)
-issues_url 'https://github.com/chef-cookbooks/logwatch/issues' if respond_to?(:issues_url)
+source_url 'https://github.com/chef-cookbooks/logwatch'
+issues_url 'https://github.com/chef-cookbooks/logwatch/issues'
+chef_version '>= 12.1'
