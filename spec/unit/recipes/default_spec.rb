@@ -1,7 +1,10 @@
 require 'spec_helper'
 
 describe 'logwatch::default' do
-  let(:chef_run) { ChefSpec::ServerRunner.new.converge('logwatch::default') }
+  let(:chef_run) do
+    runner = ChefSpec::ServerRunner.new(platform: 'ubuntu', version: '16.04')
+    runner.converge('logwatch::default')
+  end
 
   it 'includes the perl recipe' do
     expect(chef_run).to include_recipe('perl::default')
