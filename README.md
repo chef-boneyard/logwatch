@@ -30,6 +30,7 @@ Ensures that perl is installed to be used with logwatch and then installs logwat
 - `node['logwatch']['range']` - The default time range for the Logwatch report
 - `node['logwatch']['format']` - The format of the Logwatch report
 - `node['logwatch']['directives']` - Additional configuration options can be added here, comma separated, for example: `default['logwatch']['directives'] = ['Print = Yes', 'Output = mail', 'Service = All']`
+- `node['logwatch']['ignores']` - Lines to be added to the ignore.conf file can be added here, comma separated, for example: `default['logwatch']['ignores'] = ['Kerberos database', 'warning']`
 
 ## License & Authors
 
