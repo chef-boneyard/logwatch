@@ -22,4 +22,5 @@ default['logwatch']['sender'] = 'Logwatch'
 default['logwatch']['detail'] = 'Low'
 default['logwatch']['range']  = 'yesterday'
 default['logwatch']['format'] = 'text'
+default['logwatch']['ignores'] = []
 default['logwatch']['directives'] = []
