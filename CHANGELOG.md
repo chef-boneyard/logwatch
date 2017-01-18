@@ -2,6 +2,10 @@
 
 This file is used to list changes made in each version of the logwatch cookbook.
 
+## 2.1.0 (2017-01-18)
+
+- added support for ignore.conf file using a new attribute
+
 ## 2.0.0 (2016-09-16)
 
 - Remove node name from the template
