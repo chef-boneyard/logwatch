@@ -2,6 +2,10 @@
 
 This file is used to list changes made in each version of the logwatch cookbook.
 
+## 2.1.1 (2017-04-10)
+
+- Loosen the perl dependency.
+
 ## 2.1.0 (2017-01-18)
 
 - added support for ignore.conf file using a new attribute
