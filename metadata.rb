@@ -13,4 +13,4 @@ end
 
 source_url 'https://github.com/chef-cookbooks/logwatch'
 issues_url 'https://github.com/chef-cookbooks/logwatch/issues'
-chef_version '>= 12.1'
+chef_version '>= 12.15'
